@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+
+        $(document).ready(function(){
+
+        $(".baslik:eq(0)").click(function(){
+          $(".icerik:eq(0)").slideToggle("slow");
+            $(".icerik:eq(1),.icerik:eq(2)").slideUp("slow");
+
+});
+
+    $(".baslik:eq(1)").click(function(){
+      $(".icerik:eq(1)").slideToggle("slow");
+       $(".icerik:eq(0),.icerik:eq(2)").slideUp("slow");
+
+});
+    $(".baslik:eq(2)").click(function(){
+     $(".icerik:eq(2)").slideToggle("slow");
+      $(".icerik:eq(0),.icerik:eq(1)").slideUp("slow");
+
+});
+    });
+
+</script>
+
+<style>
+
+.baslik , .icerik {
+    padding:5px;
+    text-align: center;
+    background: burlywood;
+}
+.icerik{
+    padding:30px;
+    display:none;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="baslik">Menü1</div>
+    <div class="icerik">JAVASCRİPT PHP C JAVA C++ PHYTON</div>
+     <div class="baslik">Menü2</div>
+    <div class="icerik">JAVASCRİPT PHP C JAVA C++ PHYTON</div>  
+    <div class="baslik">Menü3</div>
+    <div class="icerik">JAVASCRİPT PHP C JAVA C++ PHYTON</div>
+    <div class="icerik">JAVASCRİPT PHP C JAVA C++ PHYTON</div>
+
+</body>
+</html>
